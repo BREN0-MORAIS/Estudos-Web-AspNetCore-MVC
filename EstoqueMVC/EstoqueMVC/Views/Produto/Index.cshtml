@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table BORDER=1 CELLPADDING=0 cellspacing=0 WIDTH='500' ALIGN="center">
+
+            @*Cabeçalho da tabela*@
+            <thead>
+                @* linha que vai ser colocado as coluna   *@
+                <tr>
+                    @*Colunas*@
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+
+                </tr>
+            </thead>
+
+            @*Corpo da tabela *@
+            <tbody>
+
+                @foreach (var produto in ViewBag.Produtos)
+                {
+                    <tr>
+
+                        <td>@produto.Id</td>
+                        <td>@produto.Nome</td>
+                        <td>@produto.Quantidade</td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <div>
+        @* chama o formulario que vai mandar para a visualização adicionar assim que cadastrar um produto*@
+        <form action="/Produto/Adiciona" method="post">
+
+            <label for="nome">Nome</label> <br>
+
+            @* Baseado no parametro produtos que esta em adiionar ele ira chamar produtos.atributos
+                logo abaixo vemos que ele passa produto.nome, que vai esa adicionando no onjeto
+
+            *@
+            <input id="nome" name="produto.Nome" />
+            <br>
+            <label for="preco">Preço:</label> <br>
+            <input id="preco" name="produto.Preco" />
+            <br>
+            <label for="quantidade">Quantidade:</label> <br>
+            <input id="quantidade" name="produto.Quantidade" />
+            <br>
+            <label for="descricao">Descrição:</label> <br>
+            <input id="descricao" name="produto.Descricao" />
+            <br>
+            <label for="categoria">Categoria:</label> <br>
+
+            @* Comobox onde manda para o objeto produto o Id do produto
+                como o usuario não sabe o id do produto, no caso pegamos o nome e em vez de eviar o nomes
+                enviamos o ID deste nome conforme abaixo
+
+            *@
+
+
+            <select id="categoria" name="produto.CategoriaId">
+                @foreach (var categoria in ViewBag.Categorias)
+                {
+                    <option value="@categoria.Id">@categoria.Nome</option>
+                }
+            </select> <br> <br>
+
+            @* tipo submit ira mandar os dados para o adionar assim que os dados for preenchidos *@
+            <input class="btn-border-wine" type="submit" value="Cadastrar" />
+        </form>
+    </div>
+</body>
+</html>

@@ -22,11 +22,9 @@ namespace CaelumEstoque.DAO
 
                     context.SaveChanges();
 
-
                 }
             }
         }
-
         public IList<Produto> Lista()
         {
             using (var contexto = new EstoqueContext())

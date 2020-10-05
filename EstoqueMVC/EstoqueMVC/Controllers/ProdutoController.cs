@@ -30,7 +30,6 @@ namespace CaelumEstoque.Controllers
         public ActionResult form()
         {
             //retorna uma lista para adicionar na view form no item combobox
-
             //instancia o DAO categoria
             CategoriasDAO categoriasDao = new CategoriasDAO();
 
@@ -46,16 +45,35 @@ namespace CaelumEstoque.Controllers
         }
 
         //passa os dados do formularios para esse metodo que carrega todos os atributos do objeto
+
+        //anotação para enviar só metodos do tipo Post que não passa dados na URL 
+        [HttpPostAttribute]
         public ActionResult Adiciona(Produto produto)
         {
-            //instancia o dao 
-            ProdutosDAO dao = new ProdutosDAO();
+            //verifica se os dados preenchidos obedece a forma de validação das anotações do models
+            if (ModelState.IsValid)
+            {
+                //instancia o dao 
+                ProdutosDAO dao = new ProdutosDAO();
 
-            //chama o metodo de adicionar o objeto 
-            dao.Adiciona(produto);
+                //chama o metodo de adicionar o objeto 
+                dao.Adiciona(produto);
 
-            //retorna a view, para a camada de visualização
-            return View();
+                //retorna a view, para a camada de visualização
+
+                //faz o redirecionamento para o Produto onde esta a listagem da tabela de dados
+                return RedirectToAction("Index", "Produto");
+
+            }
+            else
+            {
+                CategoriasDAO categoriasDAO = new CategoriasDAO();
+
+                ViewBag.categorias = categoriasDAO.Lista();
+                //se a requisição acima não for de acordo, mostra novamente o formulaio para o usuário 
+                return View("Form");
+            }
+          
         }
        
     }

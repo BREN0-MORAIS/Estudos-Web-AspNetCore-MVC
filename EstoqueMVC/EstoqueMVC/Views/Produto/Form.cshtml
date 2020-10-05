@@ -19,6 +19,8 @@
 
             *@
             <input id="nome" name="produto.Nome" />
+            @* mostra uma menssagem de validação, html Helper, passabdo como argumento a menssagem *@
+            @Html.ValidationMessage("produto.Nome");
             <br>
             <label for="preco">Preço:</label> <br>
             <input id="preco" name="produto.Preco" />

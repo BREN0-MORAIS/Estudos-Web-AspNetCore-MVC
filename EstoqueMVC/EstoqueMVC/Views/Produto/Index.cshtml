@@ -25,14 +25,12 @@
                     <th>Descrição</th>
                 </tr>
             </thead>
-
             @*Corpo da tabela *@
             <tbody>
 
                 @foreach (var produto in ViewBag.Produtos)
                 {
                     <tr>
-
                         <td>@produto.Id</td>
                         <td>@produto.Nome</td>
                         <td>@produto.Quantidade</td>
@@ -40,11 +38,7 @@
                     </tr>
                 }
             </tbody>
-            <p>
-
         </table>
-
-
     </div>
 </body>
 </html>

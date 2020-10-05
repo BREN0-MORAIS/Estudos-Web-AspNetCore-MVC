@@ -1,8 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\BRENO MORAIS\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\BRENO MORAIS\\.nuget\\packages"
+      "C:\\Users\\breno\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\breno\\.nuget\\packages",
+      "C:\\Microsoft\\Xamarin\\NuGet"
     ]
   }
 }

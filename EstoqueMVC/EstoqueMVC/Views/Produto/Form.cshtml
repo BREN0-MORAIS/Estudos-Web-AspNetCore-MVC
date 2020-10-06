@@ -12,6 +12,8 @@
         @* chama o formulario que vai mandar para a visualização adicionar assim que cadastrar um produto*@
         <form action="/Produto/Adiciona" method="post">
 
+            @* passando a chave do erro complexa que mostra se o valor do produto for menor que 100 reais *@
+            @Html.ValidationMessage("produto.Invalido")
             <label for="nome">Nome</label> <br>
 
             @* Baseado no parametro produtos que esta em adiionar ele ira chamar produtos.atributos
@@ -20,16 +22,16 @@
             *@
             <input id="nome" name="produto.Nome" />
             @* mostra uma menssagem de validação, html Helper, passabdo como argumento a menssagem *@
-            @Html.ValidationMessage("produto.Nome");
+            @Html.ValidationMessage("produto.Nome")
             <br>
-            <label for="preco">Preço:</label> <br>
-            <input id="preco" name="produto.Preco" />
+            <label for="preco">Preço:</label> <br>  <!----Value preenche com o valor do retorno caso alguma validação der erro-->
+            <input id="preco" name="produto.Preco" value="@ViewBag.Produto.Nome" />
             <br>
             <label for="quantidade">Quantidade:</label> <br>
-            <input id="quantidade" name="produto.Quantidade" />
+            <input id="quantidade" name="produto.Quantidade" value="@ViewBag.Produto.Quantidade" />
             <br>
             <label for="descricao">Descrição:</label> <br>
-            <input id="descricao" name="produto.Descricao" />
+            <input id="descricao" name="produto.Descricao" value="@ViewBag.Produto.Descricao" />
             <br>
             <label for="categoria">Categoria:</label> <br>
 
@@ -38,12 +40,11 @@
                 enviamos o ID deste nome conforme abaixo
 
             *@
-
-
             <select id="categoria" name="produto.CategoriaId">
                 @foreach (var categoria in ViewBag.Categorias)
                 {
-                    <option value="@categoria.Id">@categoria.Nome</option>
+
+                    <option value="@categoria.Id" selected="@categoria.Id.Equals(ViewBag.Produto.CategoriaId)">@categoria.Nome</option>
                 }
             </select> <br> <br>
 

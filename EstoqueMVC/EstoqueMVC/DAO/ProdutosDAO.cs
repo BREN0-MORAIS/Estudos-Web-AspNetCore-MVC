@@ -11,7 +11,7 @@ namespace CaelumEstoque.DAO
     public class ProdutosDAO
     {
 
-        [HttpPostAttribute]
+        [HttpPost]
         public void Adiciona(Produto produto)
         {
             if (produto != null)

@@ -40,6 +40,7 @@ namespace CaelumEstoque.Controllers
             //cria uma view bag com atributo categoria e adiciona a lista de categoria
             ViewBag.Categorias = categorias;
 
+            ViewBag.Produto = new Produto();
             //retorna a view bag, para poder chamar na visuaklzação
             return View();
         }
@@ -50,6 +51,15 @@ namespace CaelumEstoque.Controllers
         [HttpPostAttribute]
         public ActionResult Adiciona(Produto produto)
         {
+
+            int Idinformatica = 1;
+
+            //se produto da categoria Id for igual ao Id da informatica e preço for menor que sem 
+            if(produto.CategoriaId.Equals(Idinformatica) && produto.Preco < 100)
+            {
+                //Messagem de erro de validação, tm como primeiro parâmetro a chave e como segundo a menssagem
+                ModelState.AddModelError("produto.invalido","informatica com preço abaixo de R$ 100");
+            }
             //verifica se os dados preenchidos obedece a forma de validação das anotações do models
             if (ModelState.IsValid)
             {
@@ -63,15 +73,16 @@ namespace CaelumEstoque.Controllers
 
                 //faz o redirecionamento para o Produto onde esta a listagem da tabela de dados
                 return RedirectToAction("Index", "Produto");
-
             }
             else
             {
-                CategoriasDAO categoriasDAO = new CategoriasDAO();
+               //caso else pega o produto que veio da camada de visualização e adiciona em uma viewBag
+                ViewBag.produto = produto;
 
+                CategoriasDAO categoriasDAO = new CategoriasDAO();
                 ViewBag.categorias = categoriasDAO.Lista();
                 //se a requisição acima não for de acordo, mostra novamente o formulaio para o usuário 
-                return View("Form");
+                return View("form");
             }
           
         }

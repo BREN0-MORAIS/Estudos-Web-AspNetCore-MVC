@@ -15,7 +15,7 @@ namespace CaelumEstoque.Models
 
         //Required = define que o campo seja obrigatorio o Preenchimento
         //StringLength(20) = define que o campo tenha o numero maximo 20 caracteres 
-
+        [Required, StringLength(20)]
         public String Nome { get; set; }
 
         public float Preco { get; set; }

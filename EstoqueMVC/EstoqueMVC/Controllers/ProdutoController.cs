@@ -27,7 +27,7 @@ namespace CaelumEstoque.Controllers
         }
 
 
-        public ActionResult form()
+        public ActionResult Form()
         {
             //retorna uma lista para adicionar na view form no item combobox
             //instancia o DAO categoria
@@ -82,9 +82,21 @@ namespace CaelumEstoque.Controllers
                 CategoriasDAO categoriasDAO = new CategoriasDAO();
                 ViewBag.categorias = categoriasDAO.Lista();
                 //se a requisição acima não for de acordo, mostra novamente o formulaio para o usuário 
-                return View("form");
+                return View("Form");
             }
           
+        }
+
+       //buscando um produto por Id para mostrar os detalhes 
+        public ActionResult Visualizador(int produtoid)
+        {
+            //instanciando o dao para chamar o metodo de busca por Id
+            ProdutosDAO dao = new ProdutosDAO();
+            //chamando o metodo busca por Id passa como parametro o produtoId
+            Produto produto = dao.BuscaPorId(produtoid);
+            ViewBag.Porduto = produto;
+
+            return View();
         }
        
     }

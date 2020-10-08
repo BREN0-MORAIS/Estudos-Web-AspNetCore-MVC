@@ -1,11 +1,12 @@
-﻿using System;
+﻿using CaelumEstoque.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Web;
 
-namespace CaelumEstoque.Models
+namespace EstoqueMVC.Models
 {
     public class Produto
     {

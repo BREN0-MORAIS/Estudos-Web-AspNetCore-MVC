@@ -1,4 +1,5 @@
-﻿
+﻿@model IList<EstoqueMVC.Models.Produto>
+
 @{
     Layout = null;
 }
@@ -28,15 +29,23 @@
             @*Corpo da tabela *@
             <tbody>
 
-                @foreach (var produto in ViewBag.Produtos)
+                @foreach (var produto in Model)
                 {
                     <tr>
                         <td>@produto.Id</td>
 
-                        <!--cria um link, que chama o controller depois manda pra pagina que deseja,
+                        <td>
+                            <!--cria um link, que chama o controller depois manda pra pagina que deseja,
                             enviando o Id, que coloca o link no nome que esta na tabela
                             --->
-                        <td><a href="/Produto/Visualizador/@produto.Id" >@produto.Nome</a></td>
+                            @*<a href="/Produto/Visualizador/@produto.Id">@produto.Nome</a>*@
+
+                            <!---primeiro parametro recebe o texto que vai aparecer,
+                            segundo parametro qual aaction que vou enviar, terceiro passa o id para
+                            buscar na action
+                            segundo---->
+                            @Html.ActionLink(produto.Nome, "Visualizador", new { id = produto.Id })
+                        </td>
                         <!----<td>@produto.Nome  <a href></a></td>-->
                         <td>@produto.Quantidade</td>
                         <td>@produto.Descricao</td>

@@ -78,6 +78,12 @@ H:\Desenvolvimento\_Codigo-Fonte\Estudos-WebAspNetCoreMVC\EstoqueMVC\EstoqueMVC\
 H:\Desenvolvimento\_Codigo-Fonte\Estudos-WebAspNetCoreMVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Index.cshtml.g.cs
 H:\Desenvolvimento\_Codigo-Fonte\Estudos-WebAspNetCoreMVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Form.cshtml.g.cs
 H:\Desenvolvimento\_Codigo-Fonte\Estudos-WebAspNetCoreMVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Adiciona.cshtml.g.cs
+E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.AssemblyInfoInputs.cache
+E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.AssemblyInfo.cs
+E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.csproj.CoreCompileInputs.cache
+E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.MvcApplicationPartsAssemblyInfo.cache
+E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.RazorAssemblyInfo.cache
+E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.RazorAssemblyInfo.cs
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\bin\Debug\netcoreapp3.1\appsettings.json
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -129,13 +135,6 @@ E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCo
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.csprojAssemblyReference.cache
-E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.AssemblyInfoInputs.cache
-E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.AssemblyInfo.cs
-E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.csproj.CoreCompileInputs.cache
-E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.MvcApplicationPartsAssemblyInfo.cache
-E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.RazorAssemblyInfo.cache
-E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.RazorAssemblyInfo.cs
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.TagHelpers.input.cache
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.TagHelpers.output.cache
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.RazorCoreGenerate.cache
@@ -144,6 +143,7 @@ E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCo
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Adiciona.cshtml.g.cs
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Form.cshtml.g.cs
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Index.cshtml.g.cs
+E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Visualizador.cshtml.g.cs
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -158,4 +158,3 @@ E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCo
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.dll
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.pdb
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.genruntimeconfig.cache
-E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Visualizador.cshtml.g.cs

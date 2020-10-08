@@ -1,4 +1,5 @@
 ﻿using CaelumEstoque.Models;
+using EstoqueMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;

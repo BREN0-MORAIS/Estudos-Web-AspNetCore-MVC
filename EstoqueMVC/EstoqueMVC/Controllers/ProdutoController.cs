@@ -4,10 +4,12 @@ using CaelumEstoque.Models;
 using CaelumEstoque.Filtros;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using EstoqueMVC.Models;
 
 namespace CaelumEstoque.Controllers
 {
    // [AutorizacaoFilter]
+
     public class ProdutoController : Controller
     {
         public ActionResult Index()
@@ -20,7 +22,7 @@ namespace CaelumEstoque.Controllers
             IList<Produto> produtos = dao.Lista();
 
             //cria uma viewBag com atributo Produtos que recebe uma lista de produtos
-            ViewBag.Produtos = produtos;
+     
 
             //retorna a lista de produtos para a visuaiização de dados
             return View(produtos);
@@ -88,6 +90,7 @@ namespace CaelumEstoque.Controllers
         }
 
        //buscando um produto por Id para mostrar os detalhes 
+     
         public ActionResult Visualizador(int Id)
         {
             //instanciando o dao para chamar o metodo de busca por Id

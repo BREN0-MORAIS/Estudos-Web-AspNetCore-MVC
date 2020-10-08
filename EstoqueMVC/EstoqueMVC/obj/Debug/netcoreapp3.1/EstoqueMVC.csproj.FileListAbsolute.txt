@@ -158,4 +158,4 @@ E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCo
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.dll
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.pdb
 E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\EstoqueMVC.genruntimeconfig.cache
-E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Visualiza.cshtml.g.cs
+E:\_Desenvolvimento-Breno_Morais\_Código-Fonte\Estudos-WEB\Estudos-Web-AspNetCore-MVC\EstoqueMVC\EstoqueMVC\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Visualizador.cshtml.g.cs

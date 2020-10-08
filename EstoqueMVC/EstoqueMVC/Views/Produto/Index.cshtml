@@ -32,7 +32,12 @@
                 {
                     <tr>
                         <td>@produto.Id</td>
-                        <td>@produto.Nome  <a href></a></td>
+
+                        <!--cria um link, que chama o controller depois manda pra pagina que deseja,
+                            enviando o Id, que coloca o link no nome que esta na tabela
+                            --->
+                        <td><a href="/Produto/Visualizador/@produto.Id" >@produto.Nome</a></td>
+                        <!----<td>@produto.Nome  <a href></a></td>-->
                         <td>@produto.Quantidade</td>
                         <td>@produto.Descricao</td>
                     </tr>

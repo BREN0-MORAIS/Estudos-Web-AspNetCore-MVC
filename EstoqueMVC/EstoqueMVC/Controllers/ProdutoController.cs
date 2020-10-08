@@ -88,13 +88,15 @@ namespace CaelumEstoque.Controllers
         }
 
        //buscando um produto por Id para mostrar os detalhes 
-        public ActionResult Visualizador(int produtoid)
+        public ActionResult Visualizador(int Id)
         {
             //instanciando o dao para chamar o metodo de busca por Id
             ProdutosDAO dao = new ProdutosDAO();
             //chamando o metodo busca por Id passa como parametro o produtoId
-            Produto produto = dao.BuscaPorId(produtoid);
-            ViewBag.Porduto = produto;
+            Produto produto = dao.BuscaPorId(Id);
+
+            //cria uma viewBag que recebe o Id do produto
+            ViewBag.Produto = produto;
 
             return View();
         }

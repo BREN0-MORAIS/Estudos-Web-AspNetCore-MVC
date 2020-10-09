@@ -1,19 +1,6 @@
 ﻿@model IList<EstoqueMVC.Models.Produto>
 
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div>
-        <table BORDER=1 CELLPADDING=0 cellspacing=0 WIDTH='500' ALIGN="center">
+        <table class="table table-hover">
 
             @*Cabeçalho da tabela*@
             <thead>
@@ -49,10 +36,8 @@
                         <!----<td>@produto.Nome  <a href></a></td>-->
                         <td>@produto.Quantidade</td>
                         <td>@produto.Descricao</td>
+                        <td ><a href="/Produto/DecrementarQTD/@produto.Id">-</a></td>
                     </tr>
                 }
             </tbody>
         </table>
-    </div>
-</body>
-</html>

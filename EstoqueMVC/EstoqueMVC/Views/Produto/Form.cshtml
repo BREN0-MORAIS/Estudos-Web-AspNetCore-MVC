@@ -1,14 +1,4 @@
-﻿
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-
-    <div>
+﻿    <div>
         @* chama o formulario que vai mandar para a visualização adicionar assim que cadastrar um produto*@
         <form action="/Produto/Adiciona" method="post">
 
@@ -20,18 +10,18 @@
                 logo abaixo vemos que ele passa produto.nome, que vai esa adicionando no onjeto
 
             *@
-            <input id="nome" name="produto.Nome" />
+            <input id="" class="form-control" name="produto.Nome" />
             @* mostra uma menssagem de validação, html Helper, passabdo como argumento a menssagem *@
             @Html.ValidationMessage("produto.Nome")
             <br>
             <label for="preco">Preço:</label> <br>  <!----Value preenche com o valor do retorno caso alguma validação der erro-->
-            <input id="preco" name="produto.Preco" value="@ViewBag.Produto.Nome" />
+            <input class="form-control" id ="" name="produto.Preco" value="@ViewBag.Produto.Nome" />
             <br>
             <label for="quantidade">Quantidade:</label> <br>
-            <input id="quantidade" name="produto.Quantidade" value="@ViewBag.Produto.Quantidade" />
+            <input class="form-control" id="" name="produto.Quantidade" value="@ViewBag.Produto.Quantidade" />
             <br>
             <label for="descricao">Descrição:</label> <br>
-            <input id="descricao" name="produto.Descricao" value="@ViewBag.Produto.Descricao" />
+            <input class="form-control" id="descricao" name="produto.Descricao" value="@ViewBag.Produto.Descricao" />
             <br>
             <label for="categoria">Categoria:</label> <br>
 
@@ -40,7 +30,7 @@
                 enviamos o ID deste nome conforme abaixo
 
             *@
-            <select id="categoria" name="produto.CategoriaId">
+            <select class="form-control" id="categoria" name="produto.CategoriaId">
                 @foreach (var categoria in ViewBag.Categorias)
                 {
 
@@ -52,5 +42,3 @@
             <input class="btn-border-wine" type="submit" value="Cadastrar" />
         </form>
     </div>
-</body>
-</html>

@@ -5,6 +5,7 @@ using CaelumEstoque.Filtros;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using EstoqueMVC.Models;
+using System;
 
 namespace CaelumEstoque.Controllers
 {
@@ -103,6 +104,18 @@ namespace CaelumEstoque.Controllers
 
             return View();
         }
-       
+
+        public ActionResult DecrementarQTD(int Id)
+        {
+
+
+            ProdutosDAO dao = new ProdutosDAO();
+            dao.RemoverQTD(Id);
+
+
+            return RedirectToAction("index");
+        }
+
+
     }
 }

@@ -26,6 +26,18 @@ namespace CaelumEstoque.DAO
                 }
             }
         }
+
+        public void Remover(Produto produto)
+        {
+            if (produto != null)
+            {
+                using (var context = new EstoqueContext())
+                {
+                    context.Produtos.Remove(produto);
+                    context.SaveChanges();
+                }
+            }
+        }
         public IList<Produto> Lista()
         {
             using (var contexto = new EstoqueContext())
@@ -48,9 +60,30 @@ namespace CaelumEstoque.DAO
         {
             using (var contexto = new EstoqueContext())
             {
-                // contexto.Entry(produto).State = System.Data.Entity.EntityState.Modified;
+                contexto.Entry(produto);
                 contexto.SaveChanges();
             }
+        }
+
+
+        public void RemoverQTD(int Id)
+        {
+            if(Id!= null)
+            {
+                using (var contexto = new EstoqueContext())
+                {
+                    Produto produto = new Produto();
+
+                    produto.Id = Id;
+
+                    produto.Quantidade--;
+
+                    contexto.Produtos.(produto);
+
+                    contexto.SaveChanges();
+                }
+            }
+
         }
     }
 }

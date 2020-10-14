@@ -107,11 +107,22 @@ namespace CaelumEstoque.Controllers
 
         public ActionResult DecrementarQTD(int Id)
         {
-
-
-            ProdutosDAO dao = new ProdutosDAO();
-            dao.RemoverQTD(Id);
-
+           ProdutosDAO dao = new ProdutosDAO();
+           //pega o Id do Produto que deseja modificar
+           Produto produto = dao.BuscaPorId(Id);
+           //decrementa 
+         
+            if (produto.Quantidade <= 0)
+            {
+                produto.Quantidade = produto.Quantidade;
+            }
+            else
+            {
+                produto.Quantidade--;
+                //passa para o Metodo de atualizar
+                dao.Atualiza(produto);
+                //retorna para a pagina de produto
+            }
 
             return RedirectToAction("index");
         }

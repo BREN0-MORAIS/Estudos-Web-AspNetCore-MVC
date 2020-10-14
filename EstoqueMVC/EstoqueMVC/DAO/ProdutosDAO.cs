@@ -56,34 +56,29 @@ namespace CaelumEstoque.DAO
             }
         }
 
+        #region metodo atualiza do ALura
+        //public void Atualiza(Produto produto)
+        //{
+        //    using (var contexto = new EstoqueContext())
+        //    {
+        //        contexto.Entry(produto);
+        //        contexto.SaveChanges();
+        //    }
+        //}
+        #endregion
+
         public void Atualiza(Produto produto)
         {
             using (var contexto = new EstoqueContext())
             {
-                contexto.Entry(produto);
+                contexto.Entry(produto).State = EntityState.Modified;
                 contexto.SaveChanges();
             }
+
         }
 
 
-        public void RemoverQTD(int Id)
-        {
-            if(Id!= null)
-            {
-                using (var contexto = new EstoqueContext())
-                {
-                    Produto produto = new Produto();
-
-                    produto.Id = Id;
-
-                    produto.Quantidade--;
-
-                    contexto.Produtos.(produto);
-
-                    contexto.SaveChanges();
-                }
-            }
+        
 
         }
     }
-}

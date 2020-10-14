@@ -34,9 +34,9 @@
                             @Html.ActionLink(produto.Nome, "Visualizador", new { id = produto.Id })
                         </td>
                         <!----<td>@produto.Nome  <a href></a></td>-->
-                        <td>@produto.Quantidade</td>
+                        <td class="QTD">@produto.Quantidade</td>
                         <td>@produto.Descricao</td>
-                        <td ><a href="/Produto/DecrementarQTD/@produto.Id">-</a></td>
+                        <td ><a  class="Decremento" href="/Produto/DecrementarQTD/@produto.Id">-</a></td>
                     </tr>
                 }
             </tbody>

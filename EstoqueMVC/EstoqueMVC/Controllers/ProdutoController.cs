@@ -112,19 +112,16 @@ namespace CaelumEstoque.Controllers
            Produto produto = dao.BuscaPorId(Id);
            //decrementa 
          
-            if (produto.Quantidade <= 0)
-            {
-                produto.Quantidade = produto.Quantidade;
-            }
-            else
-            {
+         
+           
+          
                 produto.Quantidade--;
                 //passa para o Metodo de atualizar
                 dao.Atualiza(produto);
                 //retorna para a pagina de produto
-            }
+            
 
-            return RedirectToAction("index");
+            return Json(produto);
         }
 
 

@@ -34,9 +34,9 @@
                             @Html.ActionLink(produto.Nome, "Visualizador", new { id = produto.Id })
                         </td>
                         <!----<td>@produto.Nome  <a href></a></td>-->
-                        <td class="QTD" id="quantidade@(produto.Id)">@produto.Quantidade</td>
+                        <td class="QTD" id="quantidad(@produto.Id)">@produto.Quantidade</td>
                         <td>@produto.Descricao</td>
-                        <td ><a  class="Decremento" href="#" onclick="decrementa(@produto.Id);">-</a></td>
+                        <td ><a  class="Decremento" href="#" onclick="decrementa(@produto.Id);">Decrementa</a></td>
                     </tr>
                 }
             </tbody>
@@ -47,18 +47,19 @@
 
     function decrementa(produtoId) {
          //passa Url Helper que gera, passa a Action do Controller depois o Controler
-    var url = "@Url.Action("DecrementarQTD","Produto")";
+        var url = "@Url.Action("DecrementarQTD","Produto")";
 
-        $.post(url, { id: produtoId }, atualiza)
+        $.post(url, { Id: produtoId }, atualiza);
     }
+
+    function atualiza(reposta) {
+        var elemento = $("#quantidade" + resposta.Id);
+        elemento.html(resposta.Quantidade);
+    }
+
 
     //ajustar, não esta funcionando a atualização em Tempo real
 
-    function atualiza(resposta) {
-        $('#quantidade' + resposta.Id).html(resposta.Quantidade)
-        
-    }
 
-   
 
 </script>

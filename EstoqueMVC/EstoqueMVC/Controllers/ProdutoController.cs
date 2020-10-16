@@ -1,5 +1,4 @@
-﻿
-using CaelumEstoque.DAO;
+﻿using CaelumEstoque.DAO;
 using CaelumEstoque.Models;
 using CaelumEstoque.Filtros;
 using System.Collections.Generic;
@@ -111,15 +110,12 @@ namespace CaelumEstoque.Controllers
            //pega o Id do Produto que deseja modificar
            Produto produto = dao.BuscaPorId(Id);
            //decrementa 
-         
-         
-           
-          
-                produto.Quantidade--;
-                //passa para o Metodo de atualizar
-                dao.Atualiza(produto);
-                //retorna para a pagina de produto
-            
+           produto.Quantidade--;
+           //passa para o Metodo de atualizar
+            dao.Atualiza(produto);
+            //retorna para a pagina de produto
+
+       
 
             return Json(produto);
         }
